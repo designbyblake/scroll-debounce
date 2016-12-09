@@ -7,22 +7,22 @@ global.scrollDebounce = {
  		this.fire.push([func, params]);
  	},
 	runFunctions:function(){
-		for(let i=0; i<windowScrolled.fire.length; i++){
-			windowScrolled.fire[i][0].apply(this, windowScrolled.fire[i][1]);
+		for(let i=0; i<scrollDebounce.fire.length; i++){
+			scrollDebounce.fire[i][0].apply(this, scrollDebounce.fire[i][1]);
 		}
 	},
 	didWindowScroll:function(){
-		windowScrolled.didScroll = true;
+		scrollDebounce.didScroll = true;
 	},
  	init:function(){
  		this.$the_window = window;
-       	windowScrolled.$the_window.onscroll = windowScrolled.didWindowScroll; 
+       	scrollDebounce.$the_window.onscroll = scrollDebounce.didWindowScroll; 
         setInterval(function(){
-        	if(windowScrolled.didScroll){
-        		windowScrolled.didScroll = false;
-        		windowScrolled.runFunctions();
+        	if(scrollDebounce.didScroll){
+        		scrollDebounce.didScroll = false;
+        		scrollDebounce.runFunctions();
         	}
-        },windowScrolled.pause);
+        },scrollDebounce.pause);
  	}
 };
 module.exports = scrollDebounce;
