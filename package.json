@@ -1,0 +1,24 @@
+{
+  "name": "scroll-debounce",
+  "version": "1.0.0",
+  "description": "Attach functions to window.scroll with debounce to improve performance",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/designbyblake/scroll-debounce.git"
+  },
+  "keywords": [
+    "window.scroll",
+    "scroll",
+    "debounce"
+  ],
+  "author": "Dan Blake <dan@designbyblake.com> (http://www.designbyblake.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/designbyblake/scroll-debounce/issues"
+  },
+  "homepage": "https://github.com/designbyblake/scroll-debounce#readme"
+}
