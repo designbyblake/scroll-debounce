@@ -1,6 +1,6 @@
 {
   "name": "scroll-debounce",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Attach functions to window.scroll with debounce to improve performance",
   "main": "index.js",
   "scripts": {
